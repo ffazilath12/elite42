@@ -1,27 +1,30 @@
 *{
-    margin: 10;
-    padding: 10;
+    margin:0;
+    padding:0;
 }
- li{
+ul.parent{
     list-style: none;
-    
-}
-
-ul{
     display: flex;
-    justify-content: flex-start;
-    background-color:pink;
-    li{
-    text-decoration: none;
-    text-transform: uppercase;
-    color:gray;
-    } 
+    justify-content: center;
+    background-color: gray;
+    padding:5px ;
+}
 li{
-    &:hover{
-        color:blue;
+    position:relative;
+    a{
+        padding: 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 18px;
+        color:#fff;
+        &:hover{
+            color: red;
+        }
+        ul{
+            position: type-of($value: 24px);
+            display: none;
+            background-color: gray;
+            width: 150px;
+        }
     }
-}
-li{
-   padding: 15px;
-}
 }
