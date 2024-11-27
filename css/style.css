@@ -1,0 +1,26 @@
+@charset "UTF-8";
+* {
+  margin: 10;
+  padding: 10;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-start;
+  background-color: pink;
+}
+ul li {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: gray;
+}
+ul li:hover {
+  color: blue;
+}
+ul li {
+  padding:  15px;
+}/*# sourceMappingURL=style.css.map */
