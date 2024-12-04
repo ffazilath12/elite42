@@ -1,26 +1,66 @@
-@charset "UTF-8";
 * {
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
 }
 
-li {
+ul.parent {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  background-color: gray;
+  padding: 5px;
+}
+ul.parent li {
+  position: relative;
+}
+ul.parent li a {
+  padding: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+ul.parent li a:hover {
+  color: red;
+}
+
+.header {
+  background-image: url("../image/image9.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 360px;
+}
+
+.content .products {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
   list-style: none;
 }
-
-ul {
-  display: flex;
-  justify-content: flex-start;
-  background-color: pink;
+.content .products li {
+  height: 245px;
+  width: 250px;
+  position: relative;
+  background-color: gray;
 }
-ul li {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: gray;
+.content .products li button {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 24px;
+  background-color: black;
+  color: white;
+  border: none;
 }
-ul li:hover {
-  color: blue;
-}
-ul li {
-  padding:  15px;
+.content .products li img {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
 }/*# sourceMappingURL=style.css.map */
