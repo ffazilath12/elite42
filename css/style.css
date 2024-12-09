@@ -1,26 +1,60 @@
-@charset "UTF-8";
 * {
-  margin: 10;
-  padding: 10;
+  margin: 0;
+  padding: 0;
 }
 
-li {
-  list-style: none;
+.parent {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: grey;
+  top: 80px;
+  left: 450px;
 }
-
-ul {
-  display: flex;
-  justify-content: flex-start;
-  background-color: pink;
+.parent .container {
+  position: absolute;
+  width: 400px;
+  height: 500px;
 }
-ul li {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: gray;
+.parent .container h1 {
+  position: relative;
+  left: 50px;
+  top: 26px;
 }
-ul li:hover {
+.parent .container h2 {
+  position: relative;
+  left: 50px;
+  font-size: 15px;
+}
+.parent .container h3 {
+  left: 50px;
+  position: relative;
   color: blue;
 }
-ul li {
-  padding:  15px;
+.parent .container input {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  width: 300px;
+  height: 50px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+.parent .container .first button {
+  position: relative;
+  border-radius: 50px;
+  width: 300px;
+  height: 50px;
+  left: 50px;
+  font-size: 20px;
+  background-color: blue;
+  color: #FFF;
+}
+.parent .container .second button {
+  position: relative;
+  border-radius: 50px;
+  width: 300px;
+  height: 50px;
+  left: 50px;
+  font-size: 20px;
 }/*# sourceMappingURL=style.css.map */
